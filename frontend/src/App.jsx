@@ -11,7 +11,6 @@ import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Payment from "./pages/Payment.jsx";
 import { getToken } from "./utils/auth.js";
-import { useLocation } from "react-router-dom";
 import { trackPageView } from "./utils/analytics.js";
 
 function ProtectedRoute({ children }) {
