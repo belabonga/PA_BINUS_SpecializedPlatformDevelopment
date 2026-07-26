@@ -232,12 +232,6 @@ JWT_EXPIRES_IN=7d
 
 Jika memakai MongoDB Atlas, ganti `MONGODB_URI` dengan connection string Atlas milik anda.
 
-URI Tersedia Milik Shania:
-
-```bash
-mongodb+srv://shan:admin123@personalassignmentspd.gxhjqvw.mongodb.net/?appName=PersonalAssignmentSPD
-```
-
 Jalankan seeding produk:
 
 ```bash
