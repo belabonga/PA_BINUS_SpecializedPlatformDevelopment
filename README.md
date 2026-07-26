@@ -220,15 +220,6 @@ Buat file `.env`:
 cp .env.example .env
 ```
 
-Isi `.env`:
-
-```env
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-CLIENT_URL=http://localhost:5173
-JWT_EXPIRES_IN=7d
-```
-
 Jika memakai MongoDB Atlas, ganti `MONGODB_URI` dengan connection string Atlas milik anda.
 
 Jalankan seeding produk:
@@ -241,14 +232,6 @@ Jalankan backend:
 
 ```bash
 npm run dev
-```
-
-Cek API:
-
-```txt
-http://localhost:5000
-http://localhost:5000/api/products
-http://localhost:5000/api/products/meta
 ```
 
 ## 8. Cara Menjalankan Frontend
