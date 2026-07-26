@@ -234,14 +234,6 @@ Jalankan backend:
 npm run dev
 ```
 
-Cek API:
-
-```txt
-http://localhost:5000
-http://localhost:5000/api/products
-http://localhost:5000/api/products/meta
-```
-
 ## 8. Cara Menjalankan Frontend
 
 Masuk folder frontend:
