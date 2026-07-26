@@ -1,18 +1,18 @@
-export const getToken = () => localStorage.getItem("shan_token");
+export const getToken = () => localStorage.getItem("auth_token");
 
 export const getUser = () => {
-  const raw = localStorage.getItem("shan_user");
+  const raw = localStorage.getItem("auth_user");
   return raw ? JSON.parse(raw) : null;
 };
 
 export const saveAuth = (token, user) => {
-  localStorage.setItem("shan_token", token);
-  localStorage.setItem("shan_user", JSON.stringify(user));
+  localStorage.setItem("auth_token", token);
+  localStorage.setItem("auth_user", JSON.stringify(user));
   window.dispatchEvent(new Event("auth-updated"));
 };
 
 export const logout = () => {
-  localStorage.removeItem("shan_token");
-  localStorage.removeItem("shan_user");
+  localStorage.removeItem("auth_token");
+  localStorage.removeItem("auth_user");
   window.dispatchEvent(new Event("auth-updated"));
 };
