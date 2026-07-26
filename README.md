@@ -186,7 +186,7 @@ personal_assignment_SPD/
 Contoh connection string:
 
 ```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/spd_final_user_store?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://yourusername:yourpassword@cluster.mongodb.net/youprojectname?retryWrites=true&w=majority
 ```
 
 Jika password memiliki karakter khusus seperti `@`, ubah menjadi URL encoded.
@@ -224,9 +224,8 @@ Isi `.env`:
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb://127.0.0.1:27017/spd_final_user_store
+MONGODB_URI=your_mongodb_connection_string
 CLIENT_URL=http://localhost:5173
-JWT_SECRET=shan_assignment_secret
 JWT_EXPIRES_IN=7d
 ```
 
@@ -265,12 +264,6 @@ Buat file `.env`:
 
 ```bash
 cp .env.example .env
-```
-
-Isi `.env`:
-
-```env
-VITE_API_URL=http://localhost:5000/api
 ```
 
 Jalankan frontend:
